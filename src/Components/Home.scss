@@ -1,0 +1,172 @@
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .gradient {
+    --size: 250px;
+    --speed: 50s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  
+    width: var(--size);
+    height: var(--size);
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient(hsl(158, 82, 57, 85%), hsl(252, 82, 57));
+    // animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  
+  @media (min-width: 720px) {
+    .gradient {
+      --size: 500px;
+    }
+  }
+  
+  .body {
+    background-color: #222;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .input-block {
+    // display: flex;
+//   justify-content: center;
+//   align-items: center;
+  border: solid rgb(199, 199, 199) 2px;
+  border-radius: 100px;
+  position: absolute;
+  z-index: 400;
+  width: 300px;
+  height: 100px;
+  top: 30vh;
+  right: 40vw;
+  }
+
+  .price {
+    position: absolute;
+    z-index: 100;
+    width: 300px;
+    height: 100px;
+    top: 60vh;
+    right: 35vw;
+    color:  rgb(199, 199, 199);
+    font-size: 32px;
+   
+//   padding-top: 10px;
+  }
+  .symbol {
+    position: absolute;
+    z-index: 100;
+    width: 300px;
+    height: 100px;
+    top: 55vh;
+    right: 33vw;
+    color:  rgb(199, 199, 199);
+//   padding-top: 10px;
+  }
+
+  .MuiInputBase-input {
+    color: rgb(199, 199, 199) !important;
+    text-align: center !important;
+    font-size: 32px !important;
+    margin-left: 40px !important;
+    margin-top: 10px !important;
+  }
+
+  .currencyParent {
+    position: absolute;
+    z-index: 100;
+    width: 400px;
+    height: 100px;
+    top: 70vh;
+    right: 32vw;
+    color:  rgb(199, 199, 199);
+    font-size: 28px;
+  }
+
+  .currencyChild {
+    display: inline-block;
+    margin-left: 20px;
+    border: solid rgb(199, 199, 199) 2px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+ .input-block-text {
+  border: solid rgb(199, 199, 199) 2px;
+  border-radius: 100px;
+  position: absolute;
+  z-index: 400;
+  width: 300px;
+  height: 100px;
+  top: 80vh;
+  right: 40vw;
+  
+ }
+ .input-block-text-res {
+  // border: solid rgb(199, 199, 199) 2px;
+  border-radius: 100px;
+  position: absolute;
+  z-index: 400;
+  width: 400px;
+  height: 100px;
+  top: 90vh;
+  right: 32vw;
+  font-size: 30px;
+  color: white;
+  
+ }
+
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+ }
+
+ .title {
+  // border-radius: 100px;
+  position: absolute;
+  z-index: 400;
+  width: 400px;
+  height: 100px;
+  top: 5vh;
+  right: 32vw;
+  font-size: 30px;
+  color: white;
+ }
+ .title-payment {
+  // border-radius: 100px;
+  position: absolute;
+  z-index: 400;
+  width: 400px;
+  height: 100px;
+  top: 7vh;
+  right: 3vw;
+  font-size: 15px;
+  color: white;
+  text-decoration: underline;
+  
+ }
+ .title-payment:hover{
+  cursor: pointer;
+ }
+  
+
+
+
+  
+  /* This is just to transition when you change the viewport size. */
+//   * {
+//     transition: all 0.25s ease-out;
+//   }
+  
